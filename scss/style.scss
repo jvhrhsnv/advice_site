@@ -10,9 +10,89 @@
 body {
     font-family: 'Manrope', sans-serif;
     background-color: #202733;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .container {
-        max-width: 540px;
-        height: 332px;
-        background-color: #313A48;
+        width: 40vw;
+        min-height: 332px;
+        background: #313A48;
+        box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        position: relative;
+        h2 {
+            margin: 0 auto;
+            color: #53FFAA;
+            margin-top: 48px;
+        }
+        p {
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: -0.3px;
+            color: #CEE3E9;
+            margin-top: 24px;
+            margin-left: 48px;
+            margin-right: 48px;
+        }    
+        .lines {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            .left, .right {
+                width: 200px;
+                height: 1px;
+                background-color: #4F5D74;
+            }
+            .center {
+                width: 20px;
+                height: 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 5px;
+                margin-top: -7px;
+                div {
+                    width: 6px;
+                    height:16px;
+                    background: #CEE3E9;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .refresh {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+            background-color: #53FFAA;
+            margin-top: 20px;
+            position: absolute;
+            border-radius: 50%;
+            bottom: -30px;
+            left: 42.5%;
+            transform: rotate(0deg);
+            transition: 0.5s;
+            &:active {
+                box-shadow: 0px 0px 30px #53FFAA;
+                transition: 0.5s;
+                transform: rotate(360deg);
+            }
+            .refresh-div {
+                margin-top: 20px;
+                margin-left: 20px;
+                border-radius: 13px;
+                img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 5px;
+                }
+            }        
+        }
     }
 }

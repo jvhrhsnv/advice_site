@@ -1,4 +1,6 @@
-fetch('https://api.adviceslip.com/advice')
+let refresh = document.querySelector('.refresh');
+refresh.addEventListener('click', () => {
+    fetch('https://api.adviceslip.com/advice')
     .then(response => response.json())
     .then(data => {
         const advice = data.slip.advice;
@@ -7,3 +9,4 @@ fetch('https://api.adviceslip.com/advice')
         document.querySelector("span").innerHTML ="#" + id;
     })
     .catch(error => console.log(error));
+});
