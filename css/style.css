@@ -137,6 +137,13 @@ body .container .refresh .refresh-div img {
   border-radius: 5px;
 }
 
+body footer {
+  position: absolute;
+  bottom: 20px;
+  margin-top: 130px;
+  color: #FFF;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     width: 200px;
